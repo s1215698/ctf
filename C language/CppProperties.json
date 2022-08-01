@@ -1,21 +1,28 @@
 {
-  "configurations": [
+  "tasks": [
     {
-      "inheritEnvironments": [
-        "msvc_x86"
+      "type": "cppbuild",
+      "label": "C/C++: g++.exe 建置使用中檔案",
+      "command": "C:\\MinGW\\bin\\g++.exe",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-g",
+        "${file}",
+        "-o",
+        "${fileDirname}\\${fileBasenameNoExtension}.exe"
       ],
-      "name": "x86-Debug",
-      "includePath": [
-        "${env.INCLUDE}",
-        "${workspaceRoot}\\**"
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": [
+        "$gcc"
       ],
-      "defines": [
-        "WIN32",
-        "_DEBUG",
-        "UNICODE",
-        "_UNICODE"
-      ],
-      "intelliSenseMode": "windows-msvc-x86"
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "偵錯工具產生的工作。"
     }
-  ]
+  ],
+  "version": "2.0.0"
 }
