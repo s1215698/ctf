@@ -2,6 +2,10 @@
 #轉10進制用int()   
 #轉16進制用hex()
 #(字串).encode("utf-8").hex()
+#base64.b64decode(字串).hex()
+import base64
+import sys
 
+s = "Os9mhOQRdqW2cwVrnNI72DLcAXoXUJ1HGwJBANWiJcDUGxZpnERxVw7s0913WXNtV4GqdxCzG0pG5EHThtoTRbyX0aqRP4U/hQ9tRoSoDmBn+3HPITsnbCy67vkCQBM4xZPTtUKM6Xi+16VTUnFVs9E4rqwIQCDAxn9UuVMBXlX2Cl0x0GUF4C5hItrX2woF7LVS5EizR63CyRcPovMCQQDVyNbcWD7N88MhZjujKuSrHJot7WcCaRmTGEIJ6TkU8NWt9BVjR4jvkZ2EqNd0KZWdQPukeynPcLlDEkIXyaQx"
 
-print (int(0xA9BD4C7A7763370A042FE6BEC7DDC841602DB942C7A362D1B5D372A4D08912D9))
+print (base64.b64decode(s).hex())
