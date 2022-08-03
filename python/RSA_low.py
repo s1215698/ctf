@@ -9,9 +9,11 @@ import json
 import struct
 import gmpy2
 
-
+#密文放入檔案區...
 file = open("C:\ctf_share\enc.txt","r")
 data = json.load(file)
+
+
 def attack(list):
     def extended_gcd(a, b):
         x, y = 0, 1
