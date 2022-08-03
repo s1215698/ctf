@@ -20,7 +20,15 @@ e=65537
 p=273821108020968288372911424519201044333
 q=280385007186315115828483000867559983517
 
-d=gmpy2.invert(e,(p-1)*(q-1))
+d=int(gmpy2.invert(e,(p-1)*(q-1)))
+
+
+privatekey = rsa.PrivateKey(n , e , d , p , q)
+with open("C:\\fllllllag.txt","rb") as f:
+    print(rsa.decrypt(f.read(),privatekey).decode())
+
+
+
 
 
 
@@ -30,10 +38,3 @@ c = int.from_bytes(file.read(),byteorder='big')
 m= long_to_bytes(pow(c,d,n))
 print (m)
 '''
-
-
-
-privatekey = rsa.PrivateKey(n , e , d , p , q)
-with open("C:\\fllllllag.txt","rb") as f:
-    print(rsa.decrypt(f.read(),privatekey).decode())
-    
