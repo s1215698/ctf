@@ -1,6 +1,6 @@
 #coding=utf-8
 #以下情形可考慮使用
-#1.提供一個密文和公鑰檔案
+#########1.提供一個密文和公鑰檔案
 #2.透過openssl rsa -pubin -in [公鑰檔] -text -mudulus -noout 查得 n 和加密參數e
 #3.n先轉成10進位 去http://factordb.com/ 利用n取p q值
 #4.去算私鑰
