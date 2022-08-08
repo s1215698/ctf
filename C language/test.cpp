@@ -11,24 +11,13 @@ char myhash(char a1[], int gg);
 
 
 int main(int argc, char** argv) {
-	char aa[]   = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
-	char temp[] = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
-	char hash[] = "dwjzhaxwnndwjzhaxwnndwjzhaxwnndw";
-	
-	for(int i=0;i<32;i++){
-		for(int x=0;x<32;x++){
-			temp[x] = aa[x];
-		}
-		for(int j=0;j<26;j++){
-			temp[i] = aa[i]+j;
-			char test_hash = myhash(temp,i);
-			char compare_val = hash[i];
-			if(test_hash == compare_val){
-				aa[i] = temp[i];
-				printf("%c",aa[i]);
-			}
-		}
-	}
+	char lib[] = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
+	char* input ;
+
+	scanf("%s",&input);
+
+	for(int i=0;i<input)
+	printf("%s",input);
     system("PAUSE");
     printf("\n");
   return 0;
