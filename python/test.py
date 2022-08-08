@@ -1,25 +1,59 @@
-#coding=utf-8
-#需用python2.7
-#以下情形可考慮使用
-#只給部分私鑰 ==> 利用RSA私鑰格式去反推
+# Embedded file name: ans.py
+import base64
 
+def encode1(ans):
+    s = ''
+    for i in ans:
+        x = ord(i) ^ 36
+        x = x + 25
+        s += chr(x)
 
+    return s
 
-from struct import pack
-import gmpy2
-import libnum
-from Crypto.Util.number import *
-import rsa
-
-
-
-
-
-def main():
-    flag = "flag{1010101010101010101}"
-    
-    R=int(flag[5:-1],2)
-    print (R)
+def decode1(ans):
+    s = ''
+    for i in ans:
+        x = ord(i) - 25
+        x = x ^ 36
         
-if __name__ == "__main__":
-    main()
+        s += chr(x)
+
+    return s
+
+
+def encode2(ans):
+    s = ''
+    for i in ans:
+        x = ord(i) + 36
+        x = x ^ 36
+        s += chr(x)
+
+    return s
+
+def decode2(ans):
+    s = ''
+    for i in ans:
+        
+        x = i ^ 36
+        x = x - 36
+        s += chr(x)
+
+    return s
+
+
+def encode3(ans):
+    return base64.b32encode(ans)
+
+
+
+final = 'UC7KOWVXWVNKNIC2XCXKHKK2W5NLBKNOUOSK3LNNVWW3E==='
+
+    
+    
+    
+final = base64.b32decode(final)
+final = decode2(final)
+final = decode1(final)
+    
+print(final)
+    

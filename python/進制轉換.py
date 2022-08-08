@@ -8,4 +8,4 @@ import sys
 
 s = "Os9mhOQRdqW2cwVrnNI72DLcAXoXUJ1HGwJBANWiJcDUGxZpnERxVw7s0913WXNtV4GqdxCzG0pG5EHThtoTRbyX0aqRP4U/hQ9tRoSoDmBn+3HPITsnbCy67vkCQBM4xZPTtUKM6Xi+16VTUnFVs9E4rqwIQCDAxn9UuVMBXlX2Cl0x0GUF4C5hItrX2woF7LVS5EizR63CyRcPovMCQQDVyNbcWD7N88MhZjujKuSrHJot7WcCaRmTGEIJ6TkU8NWt9BVjR4jvkZ2EqNd0KZWdQPukeynPcLlDEkIXyaQx"
 
-print (base64.b64decode(s).hex())
+print (("zwdxd").encode("utf-8").hex())
