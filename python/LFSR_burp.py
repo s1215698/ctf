@@ -20,10 +20,10 @@ for i in range(len(bin_out)):
 mask    =   0b1010011000100011100
 
 
-for x in range(2**19):   #flag內19bits  所以用2**19
+for x in range(2**19):   #因題目 flag內19bits  所以用2**19  視題目提供
     judge=1
     R=x
-    for i in range(12):
+    for i in range(12):                 #26-30行 視題目提供
         tmp=0
         for j in range(8):
             (x,out)=lfsr(x,mask)
