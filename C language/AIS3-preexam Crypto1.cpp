@@ -1,4 +1,4 @@
-//AIS3 pre-exam Crypto1
+//AIS3 2017 pre-exam Crypto1
 /*
 題目給
 #include <stdio.h>

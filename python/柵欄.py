@@ -1,5 +1,6 @@
+#coding=utf-8
 def generate_w(string, n): 
-    '''將字符排列成w型'''
+    #'''將字符排列成w型'''
     array = [['.']*len(string) for i in range(n)] #生成初始矩陣
     row = 0
     upflag = False
@@ -16,7 +17,7 @@ def generate_w(string, n):
     return array
 
 def encode(string, n):
-    '''加密'''
+   # '''加密'''
     array = generate_w(string, n)
     msg = []
     for row in range(n): #將每行的字符連起來
@@ -47,7 +48,7 @@ def crack_cipher(string):
         print(str(n)+'欄：'+''.join(decode(string, n)[1]))
 
 if __name__ == "__main__":
-    string = "ccehgyaefnpeoobe{lcirg}epriec_ora_g"
+    string = "cir kahsujaf pxhisy nb b ztlick to farjzdanwh nahioijcjp iwyh id dtvcy b glwrff dx ewmknsrcl dolxjs pxhisyx kbftv pb amn mrilffz to b xtqxcyi. ru vh s twtuuf sdjn cm uxmlpdqvhgnuvr kvpzyruhiapb."
     n = 5 #欄數
 
     #若不知道欄數，則遍歷所有可能

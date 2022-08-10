@@ -10,7 +10,7 @@ import struct
 import gmpy2
 
 #密文放入檔案區...
-file = open("C:\ctf_share\enc.txt","r")
+file = open("C:\ctf_share\\rsa2048\\flag.enc","r")
 data = json.load(file)
 
 
