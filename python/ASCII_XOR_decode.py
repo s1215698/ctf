@@ -69,4 +69,4 @@ pln = bytes([
 ]).decode()
 
 
-#print(pln)
+print(pln)
