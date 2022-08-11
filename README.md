@@ -34,3 +34,10 @@ openssl rsa -pubin -in [public key file] -text -modulus -noout   ==>可以求得
 openssl rsautl -decrypt -in [cipher file] -inkey [private key file] -out [output file nam]  ==>解密
 
 python RsaCtfTool.py --publickey [public key file] --uncipherfile [cipher file] --attack fermat  ==>n太大 可使用
+
+xortool -c " " -m 200 [enc_file]   (-c 最多的字元去爆破  -m最常key長度)
+
+
+https://hackmd.io/XbJY7EF5TsG1DO88mvV8Rg
+https://hackmd.io/uFesArA-Te2ZH3heJFQZ8Q   ##REMnux VM
+https://hackmd.io/U46j4SsiS5uIYlpVZ0uhbQ   ##Volatility Memory Analysis Use
