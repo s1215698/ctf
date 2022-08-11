@@ -4,9 +4,6 @@ python is for Crypto
 C is for Reverse
 
 
-
-
-
 Kali command list
 
 
