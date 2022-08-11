@@ -41,3 +41,4 @@ https://hackmd.io/U46j4SsiS5uIYlpVZ0uhbQ   ##Volatility Memory Analysis Use
 
 https://www.gushiciku.cn/pl/pGdq/zh-tw
 https://blog.onfvp.com/post/volatility-cheatsheet/
+https://docs.google.com/presentation/d/1EdzBWQZyeehJJuBtCJ6MTnZtNDXmy4SO5ORfVdkZsjw/edit?usp=sharing
