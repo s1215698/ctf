@@ -34,6 +34,12 @@ python RsaCtfTool.py --publickey [public key file] --uncipherfile [cipher file] 
 
 xortool -c " " -m 200 [enc_file]   (-c 最多的字元去爆破  -m最常key長度)
 
+Kali Strings ==>  讀取檔案16進位==>可輸出成txt檔
+strings [檔名] >> [輸出檔案名稱及格式EX:txt]
+
+Kali steghide用法 ==> 檢查檔案中隱藏檔案(需要有password/key才可以解)
+steghide extract -sf [檔名]
+
 
 https://hackmd.io/XbJY7EF5TsG1DO88mvV8Rg
 https://hackmd.io/uFesArA-Te2ZH3heJFQZ8Q   ##REMnux VM
