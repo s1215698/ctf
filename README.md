@@ -3,6 +3,10 @@ use for ctf
 python is for Crypto 
 C is for Reverse
 
+#python 61進位字串轉ASCII
+bytearray.fromhex(字串).decode()
+
+
 
 Kali command list
 
