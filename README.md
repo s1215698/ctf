@@ -11,9 +11,15 @@ bytearray.fromhex(字串).decode()
 Kali command list
 
 
-#share folder
-mount -t cifs -o uid=1000,gid=1000,username=chingsi,password=P@ssword1234567 //192.168.14.1/share ~/share
+https://free.drweb.com/download+cureit/gr/?lng=en
+Windows2016
+redaltertuser
+1qaz2wsx#RedAlert2021;
 
+#share folder
+mount -t cifs -o uid=1000,gid=1000,username=chingsi,password=P@ssword1234567 //192.168.14.1/ctf_share ~/share
+
+btop--類似工作管理員
 
 
 #arkime services
@@ -36,7 +42,10 @@ openssl rsautl -decrypt -in [cipher file] -inkey [private key file] -out [output
 
 python RsaCtfTool.py --publickey [public key file] --uncipherfile [cipher file] --attack fermat  ==>n太大 可使用
 
+
+
 xortool -c " " -m 200 [enc_file]   (-c 最多的字元去爆破  -m最常key長度)
+
 
 Kali Strings ==>  讀取檔案16進位==>可輸出成txt檔
 strings [檔名] >> [輸出檔案名稱及格式EX:txt]
@@ -44,11 +53,13 @@ strings [檔名] >> [輸出檔案名稱及格式EX:txt]
 Kali steghide用法 ==> 檢查檔案中隱藏檔案(需要有password/key才可以解)
 steghide extract -sf [檔名]
 
-
 https://hackmd.io/XbJY7EF5TsG1DO88mvV8Rg
 https://hackmd.io/uFesArA-Te2ZH3heJFQZ8Q   ##REMnux VM
 https://hackmd.io/U46j4SsiS5uIYlpVZ0uhbQ   ##Volatility Memory Analysis Use
 
-https://www.gushiciku.cn/pl/pGdq/zh-tw
-https://blog.onfvp.com/post/volatility-cheatsheet/
-https://docs.google.com/presentation/d/1EdzBWQZyeehJJuBtCJ6MTnZtNDXmy4SO5ORfVdkZsjw/edit?usp=sharing
+
+
+
+
+FTK mount ad1之後
+再用autopsy 的add datasource 把mount的那個槽路徑加進去 就可以了~
